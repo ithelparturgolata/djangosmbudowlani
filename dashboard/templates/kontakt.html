@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+        <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6 col-sm-6">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Kontakt
+                    </strong>
+                    <hr>
+                    <p>
+<strong> Dział Obsługi Mieszkańców:</strong><br>
+Beata Dębicka - 52 366 44 11<br>
+Katarzyna Tomczuk - 52 366 44 63<br>
+Andrzej Dudzik - 52 366 44 69<br>
+Magdalena Rybacka - 52 366 44 10<br><br>
+Sekretariat zarządu: 52 366 44 00<br>
+sekretariat@smbudowlani.pl<br><br>
+
+<strong> Czas pracy Spółdzielni Mieszkaniowej:</strong><br>
+Poniedziałek: 7<sup>00</sup> - 15<sup>00</sup><br>
+Wtorek: 7<sup>00</sup> - 16<sup>00</sup><br>
+Środa: 7<sup>00</sup> - 15<sup>00</sup><br>
+Czwartek: 7<sup>00</sup> - 15<sup>00</sup><br>
+Piątek: 7<sup>00</sup> - 14<sup>00</sup><br><br>
+
+<strong> RADA NADZORCZA:
+UWAGA! ZMIANA FORMUŁY DYŻURU RADY NADZORCZEJ</strong><br>
+
+W celu umówienia wizyty z przedstawicielem Rady Nadzorczej, prosimy o wcześniejszy kontakt pod numerem telefonu 52 366 44 08 lub na adres email:radanadzorcza@smbudowlani.pl
+Wówczas zostaniecie Państwo umówienie na spotkanie z przedstawicielem Rady Nadzorczej na konkretny dzień i godzinę.
+
+                    </p>
+                </div>
+                <div class="col-6 col-sm-6">
+                    <img src="{% static 'images/budynek_kontakt.jpg' %}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+        </div>
+    <hr>
+    {% include "footer.html" %}
+{% endblock %}

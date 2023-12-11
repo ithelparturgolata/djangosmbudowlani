@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6 col-sm-6">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Polityka jakości
+                    </strong>
+                    <hr>
+                    <p>
+                </div>
+
+                <div class="col-6 col-sm-6">
+                    <img src="{% static 'images/polityka.jpg' %}" class="d-block w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% include "footer.html" %}
+{% endblock %}

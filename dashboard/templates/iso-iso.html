@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6 col-sm-6">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        ISO 9001:2015
+                    </strong>
+                    <hr>
+                    <p align="justify">28 sierpnia 2003 roku Spółdzielnia uzyskała certyfikat potwierdzający zgodność obsługi z
+                        wymaganiami normy PN-EN ISO 9001 w zakresie zarządzania i administrowania nieruchomościami.
+
+                        Popularnie mówi się, że od tego czasu Spółdzielnia ma ISO.
+
+                        Niezależnie od przyznanego certyfikatu co najmniej raz w roku nasze działanie podlega
+                        sprawdzeniu w formie auditu nadzoru z ramienia Ogólnopolskiej Izby Gospodarki Nieruchomościami
+                        lub jednostki certyfikacyjnej TÜV NORD CERT.
+                    </p>
+                    <p>Certyfikat jest odnawiany co trzy lata.</p>
+                    W 2006 roku certyfikat przedłużono do 27.08.2009 r.<br>
+                    W 2009 roku certyfikat przedłużono do 27.08.2012 r.<br>
+                    W 2012 roku certyfikat przedłużono do 27.08.2015 r.<br>
+                    W 2015 roku certyfikat przedłużono do 27.08.2018 r.<br>
+                    W 2018 roku certyfikat przedłużono do 27.08.2021 r.<br>
+                    W 2021 roku certyfikat przedłużono do 25.08.2024 r.<br>
+
+                </div>
+
+                <div class="col-6 col-sm-6">
+                    <img src="{% static 'images/iso_sm.jpg' %}" class="d-block w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% include "footer.html" %}
+{% endblock %}
