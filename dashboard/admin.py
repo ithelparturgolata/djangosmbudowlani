@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import TuMieszkam
+from .models import Przetargi
 
-# Register your models here.
+admin.site.register(TuMieszkam)
+admin.site.register(Przetargi)

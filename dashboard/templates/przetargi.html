@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Przetargi
+                    </strong>
+                    <hr>
+              {% for record in records_przetargi %}
+                <h1> {{ record.tytul }}</h1>
+                  <h3>{{ record.opis }}</h3>
+
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% include "footer.html" %}
+{% endblock %}

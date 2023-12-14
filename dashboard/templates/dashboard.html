@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-{% load static %}
-{#    Sekcja slajder#}
+    {% load static %}
+    {#    Sekcja slajder#}
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -46,7 +46,7 @@
         </button>
     </div>
     <hr>
-{#    Sekcja podmenu#}
+    {#    Sekcja podmenu#}
     <div class="row">
         <div class="col-sm-3 ">
             <div class="card">
@@ -80,14 +80,14 @@
                 <div class="card-body">
                     <h5 class="card-title">Tu Mieszkam</h5>
                     <p class="card-text"></p>
-                    <a href="#" class="btn btn-primary">Otwórz</a>
+                    <a href="{% url 'tu_mieszkam' %}" class="btn btn-primary">Otwórz</a>
                 </div>
             </div>
         </div>
     </div>
     <hr>
-{#    Sekcja historia#}
-        <div class="card">
+    {#    Sekcja historia#}
+    <div class="card">
         <div class="card-body">
             <div class="row">
                 <div class="col-6 col-sm-6">
@@ -96,18 +96,26 @@
                         Historia i doświadczenie od 65 lat
                     </strong>
                     <hr>
-                    <p>Historia SM Budowlani zaczęła się w 1958 roku od zrzeszenia 24 członków. Po 65 latach ich liczba przekracza 13 tys. i nadal rośnie, dzięki naszym inwestycjom, budowom, ale przede wszystkim zadowolonym członkom. Te 65 lat dają nam bogaty bagaż doświadczeń w zakresie zarządzania i administrowania nieruchomościami, a naszą dewizą jest zadowolenie i bezpieczeństwo mieszkańców.
+                    <p>Historia SM Budowlani zaczęła się w 1958 roku od zrzeszenia 24 członków. Po 65 latach ich liczba
+                        przekracza 13 tys. i nadal rośnie, dzięki naszym inwestycjom, budowom, ale przede wszystkim
+                        zadowolonym członkom. Te 65 lat dają nam bogaty bagaż doświadczeń w zakresie zarządzania i
+                        administrowania nieruchomościami, a naszą dewizą jest zadowolenie i bezpieczeństwo mieszkańców.
 
-Otrzymujemy wiele nagród, wyróżnień i tytułów z rąk Ministra Gospodarki Przestrzennej i Budownictwa, a także licznych branżowych związków i centrów specjalizujących się w budownictwie. Profesjonalne i zaangażowane podejście do spółdzielczego zarządzania nieruchomościami, działalności społeczno-kulturalnej daje w rezultacie wysoką pozycję wśród spółdzielni mieszkaniowych w kraju. </p>
+                        Otrzymujemy wiele nagród, wyróżnień i tytułów z rąk Ministra Gospodarki Przestrzennej i
+                        Budownictwa, a także licznych branżowych związków i centrów specjalizujących się w budownictwie.
+                        Profesjonalne i zaangażowane podejście do spółdzielczego zarządzania nieruchomościami,
+                        działalności społeczno-kulturalnej daje w rezultacie wysoką pozycję wśród spółdzielni
+                        mieszkaniowych w kraju. </p>
                 </div>
 
                 <div class="col-6 col-sm-6">
+                    <br><br>
                     <img src="{% static 'images/ogrody14.jpg' %}" class="d-block w-100" alt="...">
                 </div>
             </div>
         </div>
-        </div>
-{#Sekcja liczby    #}
+    </div>
+    {#Sekcja liczby    #}
     <hr>
     <div class="row">
         <div class="col-sm-3 ">
@@ -147,35 +155,41 @@ Otrzymujemy wiele nagród, wyróżnień i tytułów z rąk Ministra Gospodarki P
             </div>
         </div>
     </div>
-<hr>
+    <hr>
 
-{#Sekcja Prezes#}
-        <div class="card">
+    {#Sekcja Prezes#}
+    <div class="card">
         <div class="card-body">
             <div class="row">
-                <div class="col-6 col-sm-6">
+                <div class="col-8 col-sm-8">
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
                     <strong>
-                    Jacek Kołodziej - Prezes Zarządu, Dyrektor Spółdzielni
+                        Jacek Kołodziej - Prezes Zarządu, Dyrektor Spółdzielni
                     </strong>
                     <hr>
-                    <p>Ideały nie istnieją, uczymy się na bieżąco, nieustannie poprawiamy to, co już zrobiliśmy i dzięki temu idziemy do przodu</div>
+                    <p>
+                        <strong> Ideały nie istnieją, uczymy się na bieżąco, nieustannie poprawiamy to, co już
+                            zrobiliśmy i dzięki temu idziemy do przodu
+                        </strong></p></div>
 
-                <div class="col-6 col-sm-6">
-                    <img src="{% static 'images/JK.jpg' %}" class="d-block " alt="...">
+                <div class="col-4 col-sm-4">
+                    <br><br>
+                    <img src="{% static 'images/JK.jpg' %}" class="d-block " align="right">
                 </div>
             </div>
         </div>
-        </div>
-{#Sekcja technologiczna#}
-<hr>
+    </div>
+    {#Sekcja technologiczna#}
+    <hr>
     <div class="row">
         <div class="col-sm-6 ">
             <div class="card">
                 <div class="card-body">
                     <center><i class="fa fa-flag fa-3x"></i></center>
                     <center><h5 class="card-title">SPÓŁDZIELCZOŚĆ JEST NAJLEPSZA</h5></center>
-                    <p class="card-text">Spółdzielczy model zarządzania gwarantuje stabilność, demokrację i solidarność. Zapewnia dostęp do działań kulturalnych i oświatowych. Daje pewność bezpieczeństwa finansowego. Wstąp do naszej spółdzielni i przekonaj się, jak dobrze to robimy.</p>
+                    <p class="card-text">Spółdzielczy model zarządzania gwarantuje stabilność, demokrację i solidarność.
+                        Zapewnia dostęp do działań kulturalnych i oświatowych. Daje pewność bezpieczeństwa finansowego.
+                        Wstąp do naszej spółdzielni i przekonaj się, jak dobrze to robimy.</p>
                     <p></p>
                 </div>
             </div>
@@ -185,7 +199,10 @@ Otrzymujemy wiele nagród, wyróżnień i tytułów z rąk Ministra Gospodarki P
                 <div class="card-body">
                     <center><i class="fa fa-globe fa-3x"></i></center>
                     <center><h5 class="card-title">PRZYJAZNE OTOCZENIE</h5></center>
-                    <p class="card-text">Dbamy o wysoką jakość budynków oraz aranżację terenu dookoła inwestycji. Ważne jest dla nas zapewnienie komfortu i bezpieczeństwa dla dzieci oraz dorosłych. Inwestycje znajdują się w dobrych lokalizacjach, blisko ścisłego centrum miasta lub z dogodnym do niego dojazdem. Stawiamy na funkcjonalność mieszkań oraz ich atrakcyjne ceny.</p>
+                    <p class="card-text">Dbamy o wysoką jakość budynków oraz aranżację terenu dookoła inwestycji. Ważne
+                        jest dla nas zapewnienie komfortu i bezpieczeństwa dla dzieci oraz dorosłych. Inwestycje
+                        znajdują się w dobrych lokalizacjach, blisko ścisłego centrum miasta lub z dogodnym do niego
+                        dojazdem. Stawiamy na funkcjonalność mieszkań oraz ich atrakcyjne ceny.</p>
                 </div>
             </div>
         </div>
@@ -194,7 +211,9 @@ Otrzymujemy wiele nagród, wyróżnień i tytułów z rąk Ministra Gospodarki P
                 <div class="card-body">
                     <center><i class="fa fa-cog fa-3x"></i></center>
                     <center><h5 class="card-title">NOWOCZESNE ROZWIĄZANIA</h5></center>
-                    <p class="card-text">Każdy budynek, ma odpowiednio przygotowane otoczenie, zapewniając bezpieczeństwo. Automatyka wjazdów i wejść, monitoring, zabezpieczenia przeciwpożarowe dają większe poczucie bezpieczeństwa.</p>
+                    <p class="card-text">Każdy budynek, ma odpowiednio przygotowane otoczenie, zapewniając
+                        bezpieczeństwo. Automatyka wjazdów i wejść, monitoring, zabezpieczenia przeciwpożarowe dają
+                        większe poczucie bezpieczeństwa.</p>
                 </div>
             </div>
         </div>
@@ -203,55 +222,59 @@ Otrzymujemy wiele nagród, wyróżnień i tytułów z rąk Ministra Gospodarki P
                 <div class="card-body">
                     <center><i class="fa fa-certificate fa-3x"></i></center>
                     <center><h5 class="card-title">PROFESJONALNE WSPARCIE</h5></center>
-                    <p class="card-text">Dysponujemy certyfikatem potwierdzającym zgodność obsługi z wymaganiami normy PN-EN ISO 9001 w zakresie zarządzania i administrowania nieruchomościami. Na bieżąco prowadzimy badania zadowolenia mieszkańców. Zarządzamy przeszło 13 tys. mieszkań oraz setkami lokali użytkowych i garażami. Zarządzamy również kilkunastoma wspólnotami mieszkaniowymi. Zapewniamy kompleksową opiekę w zakresie budownictwa, eksploatacji, ochrony i porządku.</p>
+                    <p class="card-text">Dysponujemy certyfikatem potwierdzającym zgodność obsługi z wymaganiami normy
+                        PN-EN ISO 9001 w zakresie zarządzania i administrowania nieruchomościami. Na bieżąco prowadzimy
+                        badania zadowolenia mieszkańców. Zarządzamy przeszło 13 tys. mieszkań oraz setkami lokali
+                        użytkowych i garażami. Zarządzamy również kilkunastoma wspólnotami mieszkaniowymi. Zapewniamy
+                        kompleksową opiekę w zakresie budownictwa, eksploatacji, ochrony i porządku.</p>
                 </div>
             </div>
         </div>
     </div>
-{#Sekcja Fair play#}
-<hr>
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    {#Sekcja Fair play#}
+    <hr>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <center><img src="{% static 'images/symbol_sm.jpg' %}" class="d-block w-50"></center>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <center><img src="{% static 'images/fair_play.jpg' %}" class="d-block w-50"></center>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <center><img src="{% static 'images/iso.jpg' %}" class="d-block w-50"></center>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">poprzedni</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Następny</span>
+        </button>
     </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-        <center><img src="{% static 'images/symbol_sm.jpg' %}" class="d-block w-50"></center>
-      <div class="carousel-caption d-none d-md-block">
-        <h5></h5>
-        <p></p>
-      </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-        <center><img src="{% static 'images/fair_play.jpg' %}" class="d-block w-50"></center>
-      <div class="carousel-caption d-none d-md-block">
-        <h5></h5>
-        <p></p>
-      </div>
-    </div>
-    <div class="carousel-item">
-        <center><img src="{% static 'images/iso.jpg' %}" class="d-block w-50"></center>
-      <div class="carousel-caption d-none d-md-block">
-        <h5></h5>
-        <p></p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">poprzedni</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Następny</span>
-  </button>
-</div>
-<hr>
-{#Sekcja footer    #}
-
-
-    {{ redirect_to_login_immediately }}
-{% include "footer.html" %}
+    <hr>
+    {#Sekcja footer    #}
+    {% include "footer.html" %}
 {% endblock %}

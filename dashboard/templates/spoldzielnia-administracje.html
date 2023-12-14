@@ -1,0 +1,470 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+
+    {#Sekcja Zarzad#}
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-8 col-sm-8">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Administracje Osiedli
+                    </strong>
+                    <hr>
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-8">
+                                    <div class="col-inner bs-30">
+                                            <div class="container">
+
+                                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                    <div class="accordion-item">
+                                                        <h5 class="accordion-header" id="flush-headingOne">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapseOne"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapseOne">
+                                                                Administracja Ogólna
+                                                            </button>
+                                                        </h5>
+                                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                             aria-labelledby="flush-headingOne"
+                                                             data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <h5 class="section-title">Sekretariat:</h5>
+                                                                <li class="text-dark">Monika Turgay - <a
+                                                                        href="tel:523664400">52 366 44 00</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Obsługi
+                                                                    Mieszkańców:</h5>
+
+                                                                <li class="text-dark">Barbara Budziak kierownik - <a
+                                                                        href="tel:523664477">52 366 44 77</a>
+                                                                </li>
+                                                                <li class="text-dark">Beata Dębicka - <a
+                                                                        href="tel:523664411">52 366 44 11</a></li>
+                                                                <li class="text-dark">Katarzyna Tomczuk - <a
+                                                                        href="tel:523664463">52 366 44 63</a></li>
+                                                                <li class="text-dark">Andrzej Dudzik - <a
+                                                                        href="tel:523664469">52 366 44 69</a></li>
+                                                                <li class="text-dark">Magdalena Rybacka - <a
+                                                                        href="tel:523664410">52 366 44 10</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział
+                                                                    Techniczno-Inwestycyjny:</h5>
+                                                                <li class="text-dark">Andrzej Asztemborski kierownik -
+                                                                    <a href="tel:523664414">52 366 44
+                                                                        14</a></li>
+                                                                <li class="text-dark">Andrzej Rak - <a
+                                                                        href="tel:523664413">52 366 44 13</a></li>
+                                                                <li class="text-dark">Edyta Demus - <a
+                                                                        href="tel:523664416">52 366 44 16</a></li>
+                                                                <li class="text-dark">Piotr Drozdowski - <a
+                                                                        href="tel:523664418">52 366 44 18</a></li>
+                                                                <li class="text-dark">Krzysztof Stępniak - <a
+                                                                        href="tel:523664475">52 366 44 75</a></li>
+                                                                <li class="text-dark">Anna Romanowska - <a
+                                                                        href="tel:523664473">52 366 44 73</a></li>
+                                                                <li class="text-dark">Karol Buda - <a
+                                                                        href="tel:523664485">52 366 44 85</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Gospodarki
+                                                                    Energetycznej:</h5>
+                                                                <li class="text-dark">Łukasz Osiński kierownik - <a
+                                                                        href="tel:523664465">52 366 44 65</a>
+                                                                </li>
+                                                                <li class="text-dark">Małgorzata Zaborowska - <a
+                                                                        href="tel:523664415">52 366 44 15</a></li>
+                                                                <li class="text-dark">Paulina Krajewska - <a
+                                                                        href="tel:523664464">52 366 44 64</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Windykacji, Najmów i
+                                                                    Dzierżaw:</h5>
+                                                                <li class="text-dark">Grzegorz Zasada kierownik - <a
+                                                                        href="tel:523664459">52 366 44 59</a>
+                                                                </li>
+                                                                <li class="text-dark">Aleksandra Bilecka - <a
+                                                                        href="tel:523664431">52 366 44 31</a></li>
+                                                                <li class="text-dark">Izabela Krężelewska - <a
+                                                                        href="tel:523664434">52 366 44 34</a></li>
+                                                                <li class="text-dark">Hanna Fordon - <a
+                                                                        href="tel:523664444">52 366 44 44</a></li>
+                                                                <li class="text-dark">Jolanta Krecz - <a
+                                                                        href="tel:523664449">52 366 44 49</a></li>
+                                                                <li class="text-dark">Grażyna Kurkowska - <a
+                                                                        href="tel:523664436">52 366 44 36</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Księgowości:</h5>
+                                                                <li class="text-dark">Daniela Grochowska kierownik - <a
+                                                                        href="tel:523664435">52 366 44
+                                                                    35</a></li>
+                                                                <li class="text-dark">Sylwia Marciniak - <a
+                                                                        href="tel:523664428">52 366 44 28</a></li>
+                                                                <li class="text-dark">Anna Walecka - <a
+                                                                        href="tel:523664445">52 366 44 45</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Finansowy:</h5>
+                                                                <li class="text-dark">Ewa Jerzakowska kierownik - <a
+                                                                        href="tel:523664437">52 366 44 37</a>
+                                                                </li>
+                                                                <li class="text-dark">Karina Knitter - <a
+                                                                        href="tel:523664425">52 366 44 25</a></li>
+                                                                <li class="text-dark">Klaudia Bizoń - <a
+                                                                        href="tel:523664427">52 366 44 27</a></li>
+                                                                <li class="text-dark">Irena Gołaś - <a
+                                                                        href="tel:523664426">52 366 44 26</a></li>
+                                                                <li class="text-dark">Monika Jurek - <a
+                                                                        href="tel:523664424">52 366 44 24</a></li>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h5 class="accordion-header" id="flush-headingTwo">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapseTwo"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapseTwo">
+                                                                Administracja Osiedla "Centrum"
+                                                            </button>
+                                                        </h5>
+                                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                             aria-labelledby="flush-headingTwo"
+                                                             data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <h5 class="section-title">Dział Ekonomiczny</h5>
+                                                                <li class="text-dark">Karolina Urbaczewska - <a
+                                                                        href="tel:523664312">52 366 43 12</a></li>
+                                                                <li class="text-dark">Robert Szyca - <a
+                                                                        href="tel:523664311">52 366 43 11</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Techniczno –
+                                                                    Administracyjny</h5>
+                                                                <li class="text-dark">Janusz Kupniewski - <a
+                                                                        href="tel:523664332">52 366 43 32</a></li>
+                                                                <li class="text-dark">Artur Budziak - <a
+                                                                        href="tel:523664331">52 366 43 31</a></li>
+                                                                <li class="text-dark">Józef Gałczyński - <a
+                                                                        href="tel:523664333">52 366 43 33</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Konserwacyjno –
+                                                                    Remontowy</h5>
+                                                                <li class="text-dark">Dariusz Gubała - <a
+                                                                        href="tel:523664321">52 366 43 21</a></li>
+                                                                <li class="text-dark">Hanna Kaczmarek - <a
+                                                                        href="tel:523664322">52 366 43 22</a></li>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h5 class="accordion-header" id="flush-headingThree">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapseThree"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapseThree">
+                                                                Administracja Osiedla "Na Skarpie"
+                                                            </button>
+                                                        </h5>
+                                                        <div id="flush-collapseThree"
+                                                             class="accordion-collapse collapse"
+                                                             aria-labelledby="flush-headingThree"
+                                                             data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <h5 class="section-title">Dział Ekonomiczny</h5>
+                                                                <li class="text-dark">Dariusz Andrzejewski - <a
+                                                                        href="tel:523664111">52 366 41 11</a></li>
+                                                                <li class="text-dark">Iwona Zielińska - <a
+                                                                        href="tel:523664112">52 366 41 12</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Techniczno –
+                                                                    Administracyjny</h5>
+                                                                <li class="text-dark">Agnieszka Babkiewicz - <a
+                                                                        href="tel:523664142">52 366 41 42</a></li>
+                                                                <li class="text-dark">Maciej Sokoliński - <a
+                                                                        href="tel:523664132">52 366 41 32</a></li>
+                                                                <li class="text-dark">Halina Kamińska - <a
+                                                                        href="tel:523664141">52 366 41 41</a></li>
+                                                                <li class="text-dark">Sławomir Sieradzki - <a
+                                                                        href="tel:523664131">52 366 41 31</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Konserwacyjno –
+                                                                    Remontowy</h5>
+                                                                <li class="text-dark">Wojciech Giezek - <a
+                                                                        href="tel:52 3664122">52 366 41 22</a></li>
+                                                                <li class="text-dark">Malwina Pogorzelska - <a
+                                                                        href="tel:523664121">52 366 41 21</a></li>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h5 class="accordion-header" id="flush-headingFour">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapseFour"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="flush-collapseFour">
+                                                                Administracja Osiedla "Na Wyżynach"
+                                                            </button>
+                                                        </h5>
+                                                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                                             aria-labelledby="flush-headingFour"
+                                                             data-bs-parent="#accordionFlushExample">
+                                                            <div class="accordion-body">
+                                                                <h5 class="section-title">Dział Ekonomiczny</h5>
+                                                                <li class="text-dark">Marlena Rulińska - <a
+                                                                        href="tel:523664211">52 366 42 11</a></li>
+                                                                <li class="text-dark">Małgorzata Bucholska - <a
+                                                                        href="tel:523664212">52 366 42 12</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Techniczno –
+                                                                    Administracyjny</h5>
+                                                                <li class="text-dark">Barbara Żytka - <a
+                                                                        href="tel:523664232">52 366 42 32</a></li>
+                                                                <li class="text-dark">Izabela Smolińska - <a
+                                                                        href="tel:523664234">52 366 42 34</a></li>
+                                                                <li class="text-dark">Kamila Godyńska-Czemerys - <a
+                                                                        href="tel:523664231">52 366 42 31</a>
+                                                                </li>
+                                                                <li class="text-dark">Agnieszka Bagrowska - <a
+                                                                        href="tel:523664233">52 366 42 33</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Konserwacyjno –
+                                                                    Remontowy</h5>
+                                                                <li class="text-dark">Ireneusz Mikołajski - <a
+                                                                        href="tel:523664222">52 366 42 22</a></li>
+                                                                <li class="text-dark">Lucyna Sznajderowska - <a
+                                                                        href="tel:523664221">52 366 42 21</a></li>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+    <hr>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Historia - Administracja Osiedla "Centrum"
+                    </strong>
+                    <hr>
+                    <p align="justify">
+                        Budynki, które zapoczątkowały powstanie administracji, obecnie o nazwie „Centrum”, to Kaliska 11 i Lelewela 48, których budowę zakończono 31.12.1959 roku. „Najmłodszym dzieckiem” są malowniczo położone nad Brdą budynki przy ul. Jagiellońskiej 70 i 70A, które oddano do użytku w 1996 roku.
+
+<p align="justify">Nazwa administracji sugeruje jednoznacznie, że swoje zasoby ma zlokalizowane w sercu miasta, ale nie tylko. Zasięgiem obejmuje rozległy obszar. Wędrówkę po osiedlu można rozpocząć od rejonu śródmieścia mijając po drodze budynki Moczyńskiego, 3-go Maja 16, Park Ludowy, Markwarta, Paderewskiego, Zamojskiego, Niemcewicza i Jagiellońskie, następnie podążając w kierunku Jurasza, Powstańców Wielkopolskich, Powstańców Śląskich, Emilii Plater dochodzimy do osiedla przy ul. Kozietulskiego, Chodkiewicza, Poniatowskiego, aby znaleźć się w najbardziej zielonej części Osiedla Leśnego tj, przy ul. Lelewela, Kasztanowej, Grabowej, Kaliskiej kończąc na ul. Czerkaskiej.
+
+<p align="justify">Obecna Administracja „Centrum”, która powstała w 1976 roku z połączenia trzech administracji ma siedzibę w budynku przy ul. Czerkaskiej 32.
+
+<p align="justify">Obsługuje 64 budynki z 2 888 mieszkaniami o łącznej powierzchni 126 251 m2. Zasoby to nie tylko mieszkania, ale również obiekty o charakterze usługowym, a także zespoły garażowe. Na dzień dzisiejszy są to 4 pawilony wolnostojące, 265 garaży i 2 parkingogaraże z 42 miejscami postojowymi.
+
+<p align="justify">Głównym celem administracji jest utrzymanie zasobów w właściwym stanie technicznym i estetycznym, kładąc duży nacisk na ich ulepszenie oraz pomoc członkom Spółdzielni i ich rodzinom w wszelkich sprawach dotyczących nieruchomości budynkowej i lokalowej.
+
+<p align="justify">Do podstawowych zadań administracji należy:<br>
+- Utrzymanie porządku w nieruchomości i najbliższym otoczeniu.<br>
+- Bieżąca konserwacja instalacji wraz z wykonywaniem planowanych przeglądów technicznych i eksploatacyjnych.<br>
+- Remonty podnoszące standard nieruchomości i najbliższego otoczenia.<br>
+- Usuwanie awarii.<br>
+- Naliczenia i rozliczenia składników czynszowych dla nieruchomości lokalowych.<br>
+- Pomoc członkom Spółdzielni i ich rodzinom w wszelkich sprawach dotyczących nieruchomości budynkowej i lokalowej.<br>
+
+<p><b>Kontakt i kompetencje działów administracji:</b></p>
+<p>Dział Ekonomiczny:<br>
+- Robert Szyca<br>
+- Karolina Urbaczewska<br>
+Kompetencje:<br>
+- wykonywanie naliczeń kart opłat<br>
+- zmiany deklaracji ilościowych<br>
+- rozliczenia mediów<br>
+- prowadzenie analiz i statystyk<br>
+
+<p>Dział Techniczno – Administracyjny:<br>
+- Janusz Kupniewski<br>
+- Artur Budziak<br>
+- Józef Gałczyński<br>
+Kompetencje:<br>
+- przeglądy techniczne budynków<br>
+- planowanie prac remontowych<br>
+- kontrola i odbiór techniczny realizowanych remontów<br>
+- przeglądy przed zakończeniem okresu gwarancyjnego<br>
+- nadzór i kontrola gospodarzy domów i firm sprzątających<br>
+
+<p>Dział Konserwacyjno – Remontowy:<br>
+- Dariusz Gubała<br>
+- Hanna Kaczmarek<br>
+Kompetencje:<br>
+- bieżące przeglądy instalacji i budynków<br>
+- przyjmowanie zgłoszeń oraz usuwanie skutków awarii i dewastacji<br>
+- realizacja planowanych remontów<br>
+- wykonywanie usług lokatorskich w zakresie napraw wewnątrz lokali<br>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+        <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Historia - Administracja Osiedla "Na Wyżynach"
+                    </strong>
+                    <hr>
+                    <p align="justify">
+                        Lata 70, dwudziestego wieku to czas dynamicznej rozbudowy osiedla Wyżyny. W celu zapewnienia sprawnej obsługi mieszkańców w 1972 roku powstała administracja na tym osiedlu. Siedziba administracji mieściła się w mieszkaniu nr 17 w budynku przy ulicy Adama Grzymały Siedleckiego 31. Następnie została przeniesiona do mieszkania nr 80 w budynku przy ulicy Ku Wiatrakom 5. Osiedle się rozrastało a tym samym powstała potrzeba powołania drugiej administracji, która swoim zasięgiem obięła tereny m.in. przy ul.: Modrakowej, Przyjaznej, Wiosny Ludów, Tadeusza Boya Żeleńskiego i Białogardzkiej.
+
+<p align="justify">I tak w roku 1981 powstała administracja pod nazwą „Wyżyny II” z siedzibą w baraku po byłym zapleczu budowy przy ul. Tadeusza Boya – Żeleńskiego 24. Od 1983 roku funkcjonuje obecna nazwa administracji – „Na Wyżynach”. W roku 1999 zaadoptowano pomieszczenia w pawilonie przy ul. Przyjaznej 13 na biura administracji i wybudowano warsztaty konserwatorów osiedlowych. Na miejscu poprzedniej siedziby administracji w 2000 roku wybudowano dwa budynki mieszkalne z lokalami użytkowymi, które obecnie stanowią wizytówkę osiedla.
+
+<p align="justify">Administrujemy 89 budynkami mieszkalnymi, z których najstarszy został oddany do użytku 7 kwietnia 1973 roku (Modrakowa 42A). Natomiast najnowsze budynki, zasiedlone zostały w II półroczu 2008 r. (Glinki 80 i 82). Razem we wszystkich budynkach na terenie administrowanym, jest 4658 lokali mieszkalnych o łącznej powierzchni 235384,69 m2. Zarządzamy również majątkiem wspólnym członków spółdzielni, którymi są lokale użytkowe. Oprócz lokali wbudowanych w budynkach mieszkalnych tj. Magnuszewska 3 i 5, posiadamy 12 lokali wolnostojących o łącznej powierzchni 11574 m2.
+
+<p align="justify">Ponadto od 01.X.2000 roku rozpoczęliśmy jako Spółdzielnia Zarządzanie Wspólnotami Mieszkaniowymi. Na dzień dzisiejszy Zarządzamy 7 nieruchomościami, w których jest 335 wyodrębnionych lokali mieszkalnych. Prowadzenie prac modernizacyjnych i remontowych ( wymiana i opomiarowanie instalacji, wymiana pokryć dachowych na papą termozgrzewalną, ocieplenie wraz z malowaniem elewacji budynków i wiele innych prac, ) przyczyniło się do zwiększenia wartości i atrakcyjności lokali mieszkalnych .
+
+<p align="justify">Głównym celem administracji jest utrzymanie zasobów w właściwym stanie technicznym i estetycznym, kładąc duży nacisk na ich ulepszenie oraz pomoc członkom spółdzielni i ich rodzinom w wszelkich sprawach dotyczących nieruchomości budynkowej i lokalowej.
+
+<p align="justify">Do podstawowych zadań administracji należy:<br>
+- Utrzymanie porządku w nieruchomości i najbliższym otoczeniu.<br>
+- Bieżąca konserwacja instalacji wraz z wykonywaniem planowanych przeglądów technicznych i eksploatacyjnych.<br>
+- Remonty podnoszące standard nieruchomości i najbliższego otoczenia.<br>
+- Usuwanie awarii.<br>
+- Naliczenia i rozliczenia składników czynszowych dla nieruchomości lokalowych.<br>
+- Pomoc członkom Spółdzielni i ich rodzinom w wszelkich sprawach dotyczących nieruchomości budynkowej i lokalowej.<br>
+
+<p><b>Kontakt i kompetencje działów administracji:</b></p>
+<p>Dział Ekonomiczny:<br>
+- Marlena Rulińska<br>
+- Małgorzata Bucholska<br>
+- Joanna Nowosielska<br>
+- Katarzyna Oszywa<br>
+Kompetencje:<br>
+- wykonywanie naliczeń kart opłat<br>
+- zmiany deklaracji ilościowych<br>
+- rozliczenia mediów<br>
+- prowadzenie analiz i statystyk<br>
+
+<p>Dział Techniczno – Administracyjny:<br>
+- Barbara Żytka<br>
+- Izabela Smolińska<br>
+- Kamila Godyńska-Czemerys<br>
+- Agnieszka Bagrowska<br>
+Kompetencje:<br>
+- przeglądy techniczne budynków<br>
+- planowanie prac remontowych<br>
+- kontrola i odbiór techniczny realizowanych remontów<br>
+- przeglądy przed zakończeniem okresu gwarancyjnego<br>
+- nadzór i kontrola gospodarzy domów i firm sprzątających<br>
+
+<p>Dział Konserwacyjno – Remontowy:<br>
+- Ireneusz Mikołajski<br>
+- Lucyna Sznajderowska<br>
+Kompetencje:<br>
+- bieżące przeglądy instalacji i budynków<br>
+- przyjmowanie zgłoszeń oraz usuwanie skutków awarii i dewastacji<br>
+- realizacja planowanych remontów<br>
+- wykonywanie usług lokatorskich w zakresie napraw wewnątrz lokali<br>
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>
+
+            <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Historia - Administracja Osiedla "Na Skarpie"
+                    </strong>
+                    <hr>
+                    <p align="justify">
+                        Lata 70, dwudziestego wieku to czas dynamicznej rozbudowy osiedla Wyżyny. W celu zapewnienia sprawnej obsługi mieszkańców w 1972 roku powstała administracja na tym osiedlu. Siedziba administracji mieściła się w mieszkaniu nr 17 w budynku przy ulicy Adama Grzymały Siedleckiego 31. Następnie została przeniesiona do mieszkania nr 80 w budynku przy ulicy Ku Wiatrakom 5.
+
+<p align="justify">Osiedle się rozrastało a tym samym powstała potrzeba powołania drugiej administracji, która swoim zasięgiem obięła tereny m.in. przy ul.: Modrakowej, Przyjaznej, Wiosny Ludów, Tadeusza Boya Żeleńskiego i Białogardzkiej.
+
+<p align="justify">I tak w roku 1981 powstała administracja pod nazwą „Wyżyny I” z siedzibą po byłym zapleczu budowy przy ul. Ku Wiatrakom 1. Od 1983 roku funkcjonuje pod nazwą Administracja Osiedla „ Na Skarpie”., a od 1985 roku mieści się w budynku przy ulicy Adama Grzymały-Siedleckiego 42.
+
+<p align="justify">Zarządzamy 52 budynkami mieszkalnymi z 5059 mieszkaniami o łącznej powierzchni 229 643,43 m2. W zasobach znajdują się 4 kompleksy garażowe, oraz nieruchomości komercyjne: - 11 pawilonów wolnostojących, 1 parkingogaraż.
+
+<p align="justify">Głównym celem administracji jest utrzymanie zasobów w właściwym stanie technicznym i estetycznym, kładąc duży nacisk na ich ulepszenie oraz pomoc członkom spółdzielni i ich rodzinom w wszelkich sprawach dotyczących nieruchomości budynkowej i lokalowej.
+
+<p align="justify">Do podstawowych zadań administracji należy:<br>
+- Utrzymanie porządku w nieruchomości i najbliższym otoczeniu.<br>
+- Bieżąca konserwacja instalacji wraz z wykonywaniem planowanych przeglądów technicznych i eksploatacyjnych.<br>
+- Remonty podnoszące standard nieruchomości i najbliższego otoczenia.<br>
+- Usuwanie awarii.<br>
+- Naliczenia i rozliczenia składników czynszowych dla nieruchomości lokalowych.<br>
+- Pomoc członkom Spółdzielni i ich rodzinom w wszelkich sprawach dotyczących nieruchomości budynkowej i lokalowej.<br>
+
+<p><b>Kontakt i kompetencje działów administracji:</b></p>
+<p>Dział Ekonomiczny:<br>
+- Dariusz Andrzejewski<br>
+- Iwona Zielińska<br>
+Kompetencje:<br>
+- wykonywanie naliczeń kart opłat<br>
+- zmiany deklaracji ilościowych<br>
+- rozliczenia mediów<br>
+- prowadzenie analiz i statystyk<br>
+
+<p>Dział Techniczno – Administracyjny:<br>
+- Agnieszka Babkiewicz<br>
+- Maciej Sokoliński<br>
+- Halina Kamińska<br>
+- Sławomir Sieradzki<br>
+Kompetencje:<br>
+- przeglądy techniczne budynków<br>
+- planowanie prac remontowych<br>
+- kontrola i odbiór techniczny realizowanych remontów<br>
+- przeglądy przed zakończeniem okresu gwarancyjnego<br>
+- nadzór i kontrola gospodarzy domów i firm sprzątających<br>
+
+<p>Dział Konserwacyjno – Remontowy:<br>
+- Wojciech Giezek<br>
+- Malwina Pogorzelska<br>
+Kompetencje:<br>
+- bieżące przeglądy instalacji i budynków<br>
+- przyjmowanie zgłoszeń oraz usuwanie skutków awarii i dewastacji<br>
+- realizacja planowanych remontów<br>
+- wykonywanie usług lokatorskich w zakresie napraw wewnątrz lokali<br>
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>
+    {#Sekcja footer    #}
+    {% include "footer.html" %}
+{% endblock %}

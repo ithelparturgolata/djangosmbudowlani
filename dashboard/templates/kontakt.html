@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     {% load static %}
-        <div class="card">
+    <div class="card">
         <div class="card-body">
             <div class="row">
                 <div class="col-6 col-sm-6">
@@ -11,35 +11,463 @@
                     </strong>
                     <hr>
                     <p>
-<strong> Dział Obsługi Mieszkańców:</strong><br>
-Beata Dębicka - 52 366 44 11<br>
-Katarzyna Tomczuk - 52 366 44 63<br>
-Andrzej Dudzik - 52 366 44 69<br>
-Magdalena Rybacka - 52 366 44 10<br><br>
-Sekretariat zarządu: 52 366 44 00<br>
-sekretariat@smbudowlani.pl<br><br>
+                        <strong> Dział Obsługi Mieszkańców:</strong><br>
+                        Beata Dębicka - 52 366 44 11<br>
+                        Katarzyna Tomczuk - 52 366 44 63<br>
+                        Andrzej Dudzik - 52 366 44 69<br>
+                        Magdalena Rybacka - 52 366 44 10<br><br>
+                        Sekretariat zarządu: 52 366 44 00<br>
+                        sekretariat@smbudowlani.pl<br><br>
 
-<strong> Czas pracy Spółdzielni Mieszkaniowej:</strong><br>
-Poniedziałek: 7<sup>00</sup> - 15<sup>00</sup><br>
-Wtorek: 7<sup>00</sup> - 16<sup>00</sup><br>
-Środa: 7<sup>00</sup> - 15<sup>00</sup><br>
-Czwartek: 7<sup>00</sup> - 15<sup>00</sup><br>
-Piątek: 7<sup>00</sup> - 14<sup>00</sup><br><br>
-
-<strong> RADA NADZORCZA:
-UWAGA! ZMIANA FORMUŁY DYŻURU RADY NADZORCZEJ</strong><br>
-
-W celu umówienia wizyty z przedstawicielem Rady Nadzorczej, prosimy o wcześniejszy kontakt pod numerem telefonu 52 366 44 08 lub na adres email:radanadzorcza@smbudowlani.pl
-Wówczas zostaniecie Państwo umówienie na spotkanie z przedstawicielem Rady Nadzorczej na konkretny dzień i godzinę.
+                        <strong> Czas pracy Spółdzielni Mieszkaniowej:</strong><br>
+                        Poniedziałek: 7<sup>00</sup> - 15<sup>00</sup><br>
+                        Wtorek: 7<sup>00</sup> - 16<sup>00</sup><br>
+                        Środa: 7<sup>00</sup> - 15<sup>00</sup><br>
+                        Czwartek: 7<sup>00</sup> - 15<sup>00</sup><br>
+                        Piątek: 7<sup>00</sup> - 14<sup>00</sup><br><br>
 
                     </p>
                 </div>
                 <div class="col-6 col-sm-6">
+                    <br><br>
                     <img src="{% static 'images/budynek_kontakt.jpg' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="card-group">
+                    <div style="width: 21rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Administracja Osiedla "Centrum"</h5>
+                            {#                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>#}
+                            <p class="card-text">ul. Czerkaska 32<br></p>
+                            Telefon: 523664300<br>
+                            <b>Kierownik Administracji:</b><br>Emilia Kabacińska<br>
+                            <b>Z-ca Kierownika Administracji:</b><br>Robert Szyca<br>
+                        </div>
+                    </div>
+                    <div style="width: 22rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Administracja Osiedla "Na Skarpie"</h5>
+                            {#                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>#}
+                            <p class="card-text">ul. Adama Grzymały-Siedleckiego 42<br></p>
+                            Telefon: 523664100<br>
+                            <b>Kierownik Administracji:</b><br>Monika Zaręba<br>
+                            <b>Z-ca Kierownika Administracji:</b><br>Iwona Zielińska<br>
+                        </div>
+                    </div>
+                    <div style="width: 23rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Administracja Osiedla "Na Wyżynach"</h5>
+                            {#                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>#}
+                            <p class="card-text">ul. Przyjazna 13<br></p>
+                            Telefon: 523664200<br>
+                            <b>Kierownik Administracji:</b><br>Piotr Krzyżaniak<br>
+                            <b>Z-ca Kierownika Administracji:</b><br>Ireneusz Mikołajski<br>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-4 ">
+                        <div class="">
+                            <div class="card-body">
+                                <div class="section-content">
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-8">
+                                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling1" aria-controls="offcanvasScrolling1">Telefony Administracja "Centrum"</button>
+                                            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling1" aria-labelledby="offcanvasScrollingLabel">
+                                                <div class="offcanvas-header">
+                                                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Administracja Osiedla "Centrum"</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                </div>
+                                                <div class="offcanvas-body">
+                                                           <div class="accordion-body">
+                                                                <h5 class="section-title">Dział Ekonomiczny</h5>
+                                                                <li class="text-dark">Karolina Urbaczewska - <a
+                                                                        href="tel:523664312">52 366 43 12</a></li>
+                                                                <li class="text-dark">Robert Szyca - <a
+                                                                        href="tel:523664311">52 366 43 11</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Techniczno –
+                                                                    Administracyjny</h5>
+                                                                <li class="text-dark">Janusz Kupniewski - <a
+                                                                        href="tel:523664332">52 366 43 32</a></li>
+                                                                <li class="text-dark">Artur Budziak - <a
+                                                                        href="tel:523664331">52 366 43 31</a></li>
+                                                                <li class="text-dark">Józef Gałczyński - <a
+                                                                        href="tel:523664333">52 366 43 33</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Konserwacyjno –
+                                                                    Remontowy</h5>
+                                                                <li class="text-dark">Dariusz Gubała - <a
+                                                                        href="tel:523664321">52 366 43 21</a></li>
+                                                                <li class="text-dark">Hanna Kaczmarek - <a
+                                                                        href="tel:523664322">52 366 43 22</a></li>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 ">
+                        <div class="">
+                            <div class="card-body">
+                                <div class="section-content">
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-8">
+                                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling2" aria-controls="offcanvasScrolling2">Telefony Administracja "Na Skarpie"</button>
+                                            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling2" aria-labelledby="offcanvasScrollingLabel">
+                                                <div class="offcanvas-header">
+                                                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Administracja Osiedla "Na Skarpie"</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                </div>
+                                                <div class="offcanvas-body">
+                                                    <div class="accordion-body">
+                                                                <h5 class="section-title">Dział Ekonomiczny</h5>
+                                                                <li class="text-dark">Dariusz Andrzejewski - <a
+                                                                        href="tel:523664111">52 366 41 11</a></li>
+                                                                <li class="text-dark">Iwona Zielińska - <a
+                                                                        href="tel:523664112">52 366 41 12</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Techniczno –
+                                                                    Administracyjny</h5>
+                                                                <li class="text-dark">Agnieszka Babkiewicz - <a
+                                                                        href="tel:523664142">52 366 41 42</a></li>
+                                                                <li class="text-dark">Maciej Sokoliński - <a
+                                                                        href="tel:523664132">52 366 41 32</a></li>
+                                                                <li class="text-dark">Halina Kamińska - <a
+                                                                        href="tel:523664141">52 366 41 41</a></li>
+                                                                <li class="text-dark">Sławomir Sieradzki - <a
+                                                                        href="tel:523664131">52 366 41 31</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Konserwacyjno –
+                                                                    Remontowy</h5>
+                                                                <li class="text-dark">Wojciech Giezek - <a
+                                                                        href="tel:52 3664122">52 366 41 22</a></li>
+                                                                <li class="text-dark">Malwina Pogorzelska - <a
+                                                                        href="tel:523664121">52 366 41 21</a></li>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 ">
+                        <div class="">
+                            <div class="card-body">
+                                <div class="section-content">
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-8">
+                                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling3" aria-controls="offcanvasScrolling3">Telefony Administracja "Na Wyżynach"</button>
+                                            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling3" aria-labelledby="offcanvasScrollingLabel">
+                                                <div class="offcanvas-header">
+                                                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Administracja Osiedla "Na Wyżynach"</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                </div>
+                                                <div class="offcanvas-body">
+                                                    <div class="accordion-body">
+                                                                <h5 class="section-title">Dział Ekonomiczny</h5>
+                                                                <li class="text-dark">Marlena Rulińska - <a
+                                                                        href="tel:523664211">52 366 42 11</a></li>
+                                                                <li class="text-dark">Małgorzata Bucholska - <a
+                                                                        href="tel:523664212">52 366 42 12</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Techniczno –
+                                                                    Administracyjny</h5>
+                                                                <li class="text-dark">Barbara Żytka - <a
+                                                                        href="tel:523664232">52 366 42 32</a></li>
+                                                                <li class="text-dark">Izabela Smolińska - <a
+                                                                        href="tel:523664234">52 366 42 34</a></li>
+                                                                <li class="text-dark">Kamila Godyńska-Czemerys - <a
+                                                                        href="tel:523664231">52 366 42 31</a>
+                                                                </li>
+                                                                <li class="text-dark">Agnieszka Bagrowska - <a
+                                                                        href="tel:523664233">52 366 42 33</a></li>
+                                                                <hr/>
+                                                                </hr>
+                                                                <h5 class="section-title">Dział Konserwacyjno –
+                                                                    Remontowy</h5>
+                                                                <li class="text-dark">Ireneusz Mikołajski - <a
+                                                                        href="tel:523664222">52 366 42 22</a></li>
+                                                                <li class="text-dark">Lucyna Sznajderowska - <a
+                                                                        href="tel:523664221">52 366 42 21</a></li>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
     <hr>
     {% include "footer.html" %}
 {% endblock %}
+
+
+
+{#                <div class="section-content">#}
+{#                            <div class="row">#}
+{#                                <div class="col-xs-12 col-sm-8">#}
+{#                                    <div class="col-inner bs-30">#}
+{#                                            <div class="container">#}
+{##}
+{#                                                <div class="accordion accordion-flush" id="accordionFlushExample">#}
+{#                                                    <div class="accordion-item">#}
+{#                                                        <h5 class="accordion-header" id="flush-headingOne">#}
+{#                                                            <button class="accordion-button collapsed" type="button"#}
+{#                                                                    data-bs-toggle="collapse"#}
+{#                                                                    data-bs-target="#flush-collapseOne"#}
+{#                                                                    aria-expanded="false"#}
+{#                                                                    aria-controls="flush-collapseOne">#}
+{#                                                                Administracja Ogólna#}
+{#                                                            </button>#}
+{#                                                        </h5>#}
+{#                                                        <div id="flush-collapseOne" class="accordion-collapse collapse"#}
+{#                                                             aria-labelledby="flush-headingOne"#}
+{#                                                             data-bs-parent="#accordionFlushExample">#}
+{#                                                            <div class="accordion-body">#}
+{#                                                                <h5 class="section-title">Sekretariat:</h5>#}
+{#                                                                <li class="text-dark">Monika Turgay - <a#}
+{#                                                                        href="tel:523664400">52 366 44 00</a></li>#}
+{#                                                                <hr/>#}
+{#                                                                </hr>#}
+{#                                                                <h5 class="section-title">Dział Obsługi#}
+{#                                                                    Mieszkańców:</h5>#}
+{##}
+{#                                                                <li class="text-dark">Barbara Budziak kierownik - <a#}
+{#                                                                        href="tel:523664477">52 366 44 77</a>#}
+{#                                                                </li>#}
+{#                                                                <li class="text-dark">Beata Dębicka - <a#}
+{#                                                                        href="tel:523664411">52 366 44 11</a></li>#}
+{#                                                                <li class="text-dark">Katarzyna Tomczuk - <a#}
+{#                                                                        href="tel:523664463">52 366 44 63</a></li>#}
+{#                                                                <li class="text-dark">Andrzej Dudzik - <a#}
+{#                                                                        href="tel:523664469">52 366 44 69</a></li>#}
+{#                                                                <li class="text-dark">Magdalena Rybacka - <a#}
+{#                                                                        href="tel:523664410">52 366 44 10</a></li>#}
+{#                                                                <hr/>#}
+{#                                                                </hr>#}
+{#                                                                <h5 class="section-title">Dział#}
+{#                                                                    Techniczno-Inwestycyjny:</h5>#}
+{#                                                                <li class="text-dark">Andrzej Asztemborski kierownik -#}
+{#                                                                    <a href="tel:523664414">52 366 44#}
+{#                                                                        14</a></li>#}
+{#                                                                <li class="text-dark">Andrzej Rak - <a#}
+{#                                                                        href="tel:523664413">52 366 44 13</a></li>#}
+{#                                                                <li class="text-dark">Edyta Demus - <a#}
+{#                                                                        href="tel:523664416">52 366 44 16</a></li>#}
+{#                                                                <li class="text-dark">Piotr Drozdowski - <a#}
+{#                                                                        href="tel:523664418">52 366 44 18</a></li>#}
+{#                                                                <li class="text-dark">Krzysztof Stępniak - <a#}
+{#                                                                        href="tel:523664475">52 366 44 75</a></li>#}
+{#                                                                <li class="text-dark">Anna Romanowska - <a#}
+{#                                                                        href="tel:523664473">52 366 44 73</a></li>#}
+{#                                                                <li class="text-dark">Karol Buda - <a#}
+{#                                                                        href="tel:523664485">52 366 44 85</a></li>#}
+{#                                                                <hr/>#}
+{#                                                                </hr>#}
+{#                                                                <h5 class="section-title">Dział Gospodarki#}
+{#                                                                    Energetycznej:</h5>#}
+{#                                                                <li class="text-dark">Łukasz Osiński kierownik - <a#}
+{#                                                                        href="tel:523664465">52 366 44 65</a>#}
+{#                                                                </li>#}
+{#                                                                <li class="text-dark">Małgorzata Zaborowska - <a#}
+{#                                                                        href="tel:523664415">52 366 44 15</a></li>#}
+{#                                                                <li class="text-dark">Paulina Krajewska - <a#}
+{#                                                                        href="tel:523664464">52 366 44 64</a></li>#}
+{#                                                                <hr/>#}
+{#                                                                </hr>#}
+{#                                                                <h5 class="section-title">Dział Windykacji, Najmów i#}
+{#                                                                    Dzierżaw:</h5>#}
+{#                                                                <li class="text-dark">Grzegorz Zasada kierownik - <a#}
+{#                                                                        href="tel:523664459">52 366 44 59</a>#}
+{#                                                                </li>#}
+{#                                                                <li class="text-dark">Aleksandra Bilecka - <a#}
+{#                                                                        href="tel:523664431">52 366 44 31</a></li>#}
+{#                                                                <li class="text-dark">Izabela Krężelewska - <a#}
+{#                                                                        href="tel:523664434">52 366 44 34</a></li>#}
+{#                                                                <li class="text-dark">Hanna Fordon - <a#}
+{#                                                                        href="tel:523664444">52 366 44 44</a></li>#}
+{#                                                                <li class="text-dark">Jolanta Krecz - <a#}
+{#                                                                        href="tel:523664449">52 366 44 49</a></li>#}
+{#                                                                <li class="text-dark">Grażyna Kurkowska - <a#}
+{#                                                                        href="tel:523664436">52 366 44 36</a></li>#}
+{#                                                                <hr/>#}
+{#                                                                </hr>#}
+{#                                                                <h5 class="section-title">Dział Księgowości:</h5>#}
+{#                                                                <li class="text-dark">Daniela Grochowska kierownik - <a#}
+{#                                                                        href="tel:523664435">52 366 44#}
+{#                                                                    35</a></li>#}
+{#                                                                <li class="text-dark">Sylwia Marciniak - <a#}
+{#                                                                        href="tel:523664428">52 366 44 28</a></li>#}
+{#                                                                <li class="text-dark">Anna Walecka - <a#}
+{#                                                                        href="tel:523664445">52 366 44 45</a></li>#}
+{#                                                                <hr/>#}
+{#                                                                </hr>#}
+{#                                                                <h5 class="section-title">Dział Finansowy:</h5>#}
+{#                                                                <li class="text-dark">Ewa Jerzakowska kierownik - <a#}
+{#                                                                        href="tel:523664437">52 366 44 37</a>#}
+{#                                                                </li>#}
+{#                                                                <li class="text-dark">Karina Knitter - <a#}
+{#                                                                        href="tel:523664425">52 366 44 25</a></li>#}
+{#                                                                <li class="text-dark">Klaudia Bizoń - <a#}
+{#                                                                        href="tel:523664427">52 366 44 27</a></li>#}
+{#                                                                <li class="text-dark">Irena Gołaś - <a#}
+{#                                                                        href="tel:523664426">52 366 44 26</a></li>#}
+{#                                                                <li class="text-dark">Monika Jurek - <a#}
+{#                                                                        href="tel:523664424">52 366 44 24</a></li>#}
+{##}
+{#                                                            </div>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                    <div class="accordion-item">#}
+{#                                                        <h5 class="accordion-header" id="flush-headingTwo">#}
+{#                                                            <button class="accordion-button collapsed" type="button"#}
+{#                                                                    data-bs-toggle="collapse"#}
+{#                                                                    data-bs-target="#flush-collapseTwo"#}
+{#                                                                    aria-expanded="false"#}
+{#                                                                    aria-controls="flush-collapseTwo">#}
+{#                                                                Administracja Osiedla "Centrum"#}
+{#                                                            </button>#}
+{#                                                        </h5>#}
+{#                                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"#}
+{#                                                             aria-labelledby="flush-headingTwo"#}
+{#                                                             data-bs-parent="#accordionFlushExample">#}
+{#                                                            <div class="accordion-body">#}
+{#                                                                <h5 class="section-title">Dział Ekonomiczny</h5>#}
+{#                                                                <li class="text-dark">Karolina Urbaczewska - <a#}
+{#                                                                        href="tel:523664312">52 366 43 12</a></li>#}
+{#                                                                <li class="text-dark">Robert Szyca - <a#}
+{#                                                                        href="tel:523664311">52 366 43 11</a></li>#}
+{#                                                                <hr/>#}
+{#                                                                </hr>#}
+{#                                                                <h5 class="section-title">Dział Techniczno –#}
+{#                                                                    Administracyjny</h5>#}
+{#                                                                <li class="text-dark">Janusz Kupniewski - <a#}
+{#                                                                        href="tel:523664332">52 366 43 32</a></li>#}
+{#                                                                <li class="text-dark">Artur Budziak - <a#}
+{#                                                                        href="tel:523664331">52 366 43 31</a></li>#}
+{#                                                                <li class="text-dark">Józef Gałczyński - <a#}
+{#                                                                        href="tel:523664333">52 366 43 33</a></li>#}
+{#                                                                <hr/>#}
+{#                                                                </hr>#}
+{#                                                                <h5 class="section-title">Dział Konserwacyjno –#}
+{#                                                                    Remontowy</h5>#}
+{#                                                                <li class="text-dark">Dariusz Gubała - <a#}
+{#                                                                        href="tel:523664321">52 366 43 21</a></li>#}
+{#                                                                <li class="text-dark">Hanna Kaczmarek - <a#}
+{#                                                                        href="tel:523664322">52 366 43 22</a></li>#}
+{#                                                            </div>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                    <div class="accordion-item">#}
+{#                                                        <h5 class="accordion-header" id="flush-headingThree">#}
+{#                                                            <button class="accordion-button collapsed" type="button"#}
+{#                                                                    data-bs-toggle="collapse"#}
+{#                                                                    data-bs-target="#flush-collapseThree"#}
+{#                                                                    aria-expanded="false"#}
+{#                                                                    aria-controls="flush-collapseThree">#}
+{#                                                                Administracja Osiedla "Na Skarpie"#}
+{#                                                            </button>#}
+{#                                                        </h5>#}
+{#                                                        <div id="flush-collapseThree"#}
+{#                                                             class="accordion-collapse collapse"#}
+{#                                                             aria-labelledby="flush-headingThree"#}
+{#                                                             data-bs-parent="#accordionFlushExample">#}
+{#                                                            <div class="accordion-body">#}
+{#                                                                <h5 class="section-title">Dział Ekonomiczny</h5>#}
+{#                                                                <li class="text-dark">Dariusz Andrzejewski - <a#}
+{#                                                                        href="tel:523664111">52 366 41 11</a></li>#}
+{#                                                                <li class="text-dark">Iwona Zielińska - <a#}
+{#                                                                        href="tel:523664112">52 366 41 12</a></li>#}
+{#                                                                <hr/>#}
+{#                                                                </hr>#}
+{#                                                                <h5 class="section-title">Dział Techniczno –#}
+{#                                                                    Administracyjny</h5>#}
+{#                                                                <li class="text-dark">Agnieszka Babkiewicz - <a#}
+{#                                                                        href="tel:523664142">52 366 41 42</a></li>#}
+{#                                                                <li class="text-dark">Maciej Sokoliński - <a#}
+{#                                                                        href="tel:523664132">52 366 41 32</a></li>#}
+{#                                                                <li class="text-dark">Halina Kamińska - <a#}
+{#                                                                        href="tel:523664141">52 366 41 41</a></li>#}
+{#                                                                <li class="text-dark">Sławomir Sieradzki - <a#}
+{#                                                                        href="tel:523664131">52 366 41 31</a></li>#}
+{#                                                                <hr/>#}
+{#                                                                </hr>#}
+{#                                                                <h5 class="section-title">Dział Konserwacyjno –#}
+{#                                                                    Remontowy</h5>#}
+{#                                                                <li class="text-dark">Wojciech Giezek - <a#}
+{#                                                                        href="tel:52 3664122">52 366 41 22</a></li>#}
+{#                                                                <li class="text-dark">Malwina Pogorzelska - <a#}
+{#                                                                        href="tel:523664121">52 366 41 21</a></li>#}
+{#                                                            </div>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                    <div class="accordion-item">#}
+{#                                                        <h5 class="accordion-header" id="flush-headingFour">#}
+{#                                                            <button class="accordion-button collapsed" type="button"#}
+{#                                                                    data-bs-toggle="collapse"#}
+{#                                                                    data-bs-target="#flush-collapseFour"#}
+{#                                                                    aria-expanded="false"#}
+{#                                                                    aria-controls="flush-collapseFour">#}
+{#                                                                Administracja Osiedla "Na Wyżynach"#}
+{#                                                            </button>#}
+{#                                                        </h5>#}
+{#                                                        <div id="flush-collapseFour" class="accordion-collapse collapse"#}
+{#                                                             aria-labelledby="flush-headingFour"#}
+{#                                                             data-bs-parent="#accordionFlushExample">#}
+{#                                                            <div class="accordion-body">#}
+{#                                                                <h5 class="section-title">Dział Ekonomiczny</h5>#}
+{#                                                                <li class="text-dark">Marlena Rulińska - <a#}
+{#                                                                        href="tel:523664211">52 366 42 11</a></li>#}
+{#                                                                <li class="text-dark">Małgorzata Bucholska - <a#}
+{#                                                                        href="tel:523664212">52 366 42 12</a></li>#}
+{#                                                                <hr/>#}
+{#                                                                </hr>#}
+{#                                                                <h5 class="section-title">Dział Techniczno –#}
+{#                                                                    Administracyjny</h5>#}
+{#                                                                <li class="text-dark">Barbara Żytka - <a#}
+{#                                                                        href="tel:523664232">52 366 42 32</a></li>#}
+{#                                                                <li class="text-dark">Izabela Smolińska - <a#}
+{#                                                                        href="tel:523664234">52 366 42 34</a></li>#}
+{#                                                                <li class="text-dark">Kamila Godyńska-Czemerys - <a#}
+{#                                                                        href="tel:523664231">52 366 42 31</a>#}
+{#                                                                </li>#}
+{#                                                                <li class="text-dark">Agnieszka Bagrowska - <a#}
+{#                                                                        href="tel:523664233">52 366 42 33</a></li>#}
+{#                                                                <hr/>#}
+{#                                                                </hr>#}
+{#                                                                <h5 class="section-title">Dział Konserwacyjno –#}
+{#                                                                    Remontowy</h5>#}
+{#                                                                <li class="text-dark">Ireneusz Mikołajski - <a#}
+{#                                                                        href="tel:523664222">52 366 42 22</a></li>#}
+{#                                                                <li class="text-dark">Lucyna Sznajderowska - <a#}
+{#                                                                        href="tel:523664221">52 366 42 21</a></li>#}
+{#                                                            </div>#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{##}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+

@@ -1,5 +1,4 @@
 from django.urls import path, include
-
 import dashboard.views
 from dashboard import views
 # from rss import views
@@ -19,7 +18,14 @@ urlpatterns = [
     path("wspolnoty", views.wspolnoty, name="wspolnoty"),
     path("kontakt", views.kontakt, name="kontakt"),
     path("spoldzielnia_organy", views.spoldzielnia_organy, name="spoldzielnia_organy"),
-
+    path("spoldzielnia_radanadzorcza", views.spoldzielnia_radanadzorcza, name="spoldzielnia_radanadzorcza"),
+    path("spoldzielnia_zarzad", views.spoldzielnia_zarzad, name="spoldzielnia_zarzad"),
+    path("spoldzielnia_radyosiedli", views.spoldzielnia_radyosiedli, name="spoldzielnia_radyosiedli"),
+    path("spoldzielnia_administracje", views.spoldzielnia_administracje, name="spoldzielnia_administracje"),
+    path("spoldzielnia_akty", views.spoldzielnia_akty, name="spoldzielnia_akty"),
+    path("spoldzielnia_rodo", views.spoldzielnia_rodo, name="spoldzielnia_rodo"),
+    path("tu_mieszkam", views.tu_mieszkam, name="tu_mieszkam"),
+    path("przetargi", views.przetargi, name="przetargi"),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,

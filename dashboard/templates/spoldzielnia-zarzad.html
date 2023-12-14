@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+
+    {#Sekcja Zarzad#}
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-8 col-sm-8">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Zarząd Spółdzielni
+                    </strong>
+                    <hr>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card h-200">
+                                <img src="{% static 'images/JK.jpg' %}" class="d-block " align="right">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jacek Kołodziej</h5>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">Prezes Zarządu, Dyrektor Spółdzielni</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-200">
+                                <img src="{% static 'images/ZK.jpg' %}" class="d-block " align="right">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zdzisława Knapińska</h5>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">Z-ca Prezesa Zarządu, Z-ca Dyrektora
+                                        Spółdzielni</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <br>
+                </div>
+                <br>
+                <hr>
+<p><center>UWAGA! ZMIANA FORMUŁY DYŻURU ZARZĄDU SPÓŁDZIELNI</center></p>
+
+<p align="justify">Dyżur Zarządu odbywa się w godzinach pracy po wcześniejszym umówieniu się
+    pod numerem telefonu 52 366 44 00, tel. kom. 500 524 230 lub adresem email: asystentka.zarzadu@smbudowlani.pl</p>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    {#Sekcja footer    #}
+    {% include "footer.html" %}
+{% endblock %}
