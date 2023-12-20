@@ -24,8 +24,18 @@ urlpatterns = [
     path("spoldzielnia_administracje", views.spoldzielnia_administracje, name="spoldzielnia_administracje"),
     path("spoldzielnia_akty", views.spoldzielnia_akty, name="spoldzielnia_akty"),
     path("spoldzielnia_rodo", views.spoldzielnia_rodo, name="spoldzielnia_rodo"),
+    path("spoldzielnia_statut", views.spoldzielnia_statut, name="spoldzielnia_statut"),
+    path("spoldzielnia_samorzad", views.spoldzielnia_samorzad, name="spoldzielnia_samorzad"),
+    path("spoldzielnia_ue", views.spoldzielnia_ue, name="spoldzielnia_ue"),
+    path("spoldzielnia_kalendarium", views.spoldzielnia_kalendarium, name="spoldzielnia_kalendarium"),
     path("tu_mieszkam", views.tu_mieszkam, name="tu_mieszkam"),
+    path("pliki", views.pliki, name="pliki"),
+    path("przetargi_details/<int:pk>", views.przetargi_details, name="przetargi_details"),
     path("przetargi", views.przetargi, name="przetargi"),
+    path("aktualnosci_details/<int:pk>", views.aktualnosci_details, name="aktualnosci_details"),
+    path("aktualnosci", views.aktualnosci, name="aktualnosci"),
+    # path("galeria_details/<int:pk>", views.galeria_details, name="galeria_details"),
+    # path("galeria", views.galeria, name="galeria"),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,

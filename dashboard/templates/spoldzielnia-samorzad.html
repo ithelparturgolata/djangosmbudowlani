@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Sprawy samorządowe
+                    </strong>
+                    <hr>
+                    <p align="justify">
+
+                        Szanowni Państwo,<br>
+
+uruchomiliśmy adres e-mail: radanadzorcza@smbudowlani.pl<br>
+
+na który prosimy pisać, pytać, składać wnioski w następujących sprawach:<br>
+
+- Statut Spółdzielni – uwagi, propozycje zmian, pytania o wyjaśnienie pojęć;<br>
+- Samorząd Domowy Mieszkańców – czym jest, czym się zajmuje, sposób jego powołania;<br>
+- Walne Zgromadzenie – termin, miejsce, sprawy podejmowane przez WZ;<br>
+- Wybory do Rad Osiedli lub Rady Nadzorczej – termin, miejsce, niezbędne i fakultatywne dokumenty składane przez kandydatów, sposób zapoznania się z informacjami o kandydatach;<br>
+- Inwestycje – plany inwestycyjne, stan ich zaawansowania;<br>
+oraz inne sprawy.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% include "footer.html" %}
+{% endblock %}

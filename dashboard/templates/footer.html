@@ -1,42 +1,41 @@
 <div class="card border-dark mb-3" style="max-width: 78rem;">
     <div class="card-header">Spółdzielnia Mieszkaniowa Budowlani</div>
     <div class="card-group">
-        <div style="width: 18rem;">
+        <div style="width: 20rem;">
             <div class="card-body">
                 <h5 class="card-title">Adres:</h5>
-{#                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>#}
                 <p class="card-text">ul. T. Boya-Żeleńskiego 1<br>
                     85-858 Bydgoszcz<br>
                     telefon: 523664400<br>
                     email: sekretariat@smbudowlani.pl<br>
                     NIP 5540312220<br>
                     REGON 000483398</p>
-{#                <a href="#" class="card-link">Card link</a>#}
-{#                <a href="#" class="card-link">Another link</a>#}
             </div>
         </div>
-        <div style="width: 28rem;">
+        <div style="width: 20rem;">
             <div class="card-body">
-                <h5 class="card-title">Dojazd:</h5>
-{#                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>#}
-{#                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the#}
-{#                    card's content.</p>#}
-                <a href="#" class="card-link">Ogólna</a>
-                <a href="#" class="card-link">Centrum</a>
-                <a href="#" class="card-link">Na Wyżynach</a>
-                <a href="#" class="card-link">Na Skarpie</a>
+                <h5 class="card-title">Przydatne linki:</h5>
+                <a href="{% url 'przetargi' %}">Przetargi</a><br>
+                <a href="{% url 'kontakt' %}">Kontakt</a><br>
+                <a href="{% url 'aktualnosci' %}">Aktualności</a><br>
+                <a href="{% url 'pliki' %}">Pobierz</a>
             </div>
         </div>
-        <div style="width: 18rem;">
+        <div style="width: 25rem;">
             <div class="card-body">
-                <h5 class="card-title">Administracje:</h5>
-{#                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>#}
-                <p class="card-text">Centrum - 523664300<br>
-                    Na Wyżynach - 523664200<br>
-                    Na Skarpie - 523664100
-                </p>
-{#                <a href="#" class="card-link">Card link</a>#}
-{#                <a href="#" class="card-link">Another link</a>#}
+                <h5 class="card-title">Social:</h5>
+                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i><br><br>
+                <div class="col-auto">
+                    Neswletter
+                    <form action="inc/mailchimp/subscribe.php" novalidate="novalidate">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                               placeholder="name@example.com">
+
+                        <button type="submit" class="btn btn-outline-secondary">Zapisz</button>
+                    </form>
+                </div>
             </div>
         </div>
 

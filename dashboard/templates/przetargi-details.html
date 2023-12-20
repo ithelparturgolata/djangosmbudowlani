@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Przetarg
+                    </strong>
+                    <hr>
+                    <div class='row card-group'>
+                        <div class="col row-cols-md-2">
+                            <div class="h-100 d-inline-block">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ records_przetargi_id.tytul | safe }}</h5>
+                                    <h5 class="card-title">{{ records_przetargi_id.opis | safe }}</h5><br>
+                                    <hr>
+                                    Data ogłoszenia: {{ records_przetargi_id.data_utworzenia}}<br>
+                                    Opublikował: {{ user | safe}}<br><br>
+                                    <a href="{% url 'przetargi' %}"><button type="button" class="btn btn-outline-secondary">Powrót</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% include "footer.html" %}
+{% endblock %}

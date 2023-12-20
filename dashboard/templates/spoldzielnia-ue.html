@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Fundusze europejskie
+                    </strong>
+                    <hr>
+                    <img src="{% static 'images/ue.jpg' %}" class="d-block " align="right"><br><br><br><br><br><br>
+                    <p>
+Spółdzielnia Mieszkaniowa Budowlani realizuje projekt pn. „Budowa instalacji fotowoltaicznych na 36 budynkach”
+Celem projektu jest: zwiększenie produkcji energii elektrycznej ze źródeł odnawialnych – energii słonecznej - na terenie Bydgoszczy poprzez zastosowanie instalacji fotowoltaicznych w budynkach mieszkalnych.
+                    </p>
+Dane finansowe:<br><br>
+Koszt całkowity: 2 507 005,71 PLN<br>
+Wydatki kwalifikowalne: 2 324 135,34 PLN<br>
+Kwota dofinansowania ze środków Unii Europejskiej (EFRR): 1 000 000,00 PLN<br><br>
+Opis projektu:<br><br>
+Przedmiotem projektu jest budowa jednostek wytwarzania energii elektrycznej (mikroinstalacji) na 36 wielorodzinnych budynkach mieszkalnych na obszarze miasta Bydgoszczy. Realizacja projektu przyczyni się do zwiększenia produkcji energii ze źródeł odnawialnych, a co się z tym bezpośrednio wiąże do poprawy stanu środowiska naturalnego. Panele (ogniwa) fotowoltaiczne są to urządzenia elektryczne, w których przy wykorzystaniu zjawiska fotoelektrycznego zachodzi bezpośrednia przemiana promieniowania świetlnego w energię elektryczną. Zainstalowana moc pojedynczej instalacji fotowoltaicznej nie będzie przekraczać 50 kWp. Łączna produkcja energii elektrycznej wyniesie ok. 367 648 kWh/rok. Przewiduje się że w wyniku realizacji projektu nastąpi redukcja emisji gazów cieplarnianych o ok. 298,53 Mg CO2/rok.<br><br>
+
+Zakres rzeczowy projektu obejmuje:<br><br>
+Opracowanie studium wykonalności,<br>
+Opracowanie dokumentacji projektowej,<br>
+Roboty instalacyjno-montażowe,<br>
+Koszty pośrednie.<br>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% include "footer.html" %}
+{% endblock %}

@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Kalendarium
+                    </strong>
+                    <hr>
+                    <p align="justify">
+{#{% for record in records_kalendarium %}#}
+{##}
+{#                        {{ record.data }}<br>#}
+{#                        {{ record.opis }}<br><br>#}
+{#{% endfor %}#}
+
+<div class="timeline-area">
+				<div class="timeline-warp">
+					<div class="timeline-single">
+						<div class="timeline_new_one">
+							<div class="timeline__bar"></div>
+								<div class="timeline__elem timeline__elem--left">
+									<div class="timeline__date">
+										<span class="timeline__date-day">10</span>
+										<span class="timeline__date-month">Jul</span>
+									</div>
+									<div class="timeline__event">
+										<div class="timeline__event-date-time">
+											<div class="timeline__event-date"> <span>10-07-2019</span></div>
+											<div class="timeline__event-time"><span>12:30pm</span></div>
+										</div>
+										<h4 class="timeline__event-title">JS meetup</h4>
+										<div class="timeline__event-descr">
+											<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+										</div>
+										<div class="timeline__event-actions">
+											<a class="timeline__event-action" href="#" title="Learn More">Learn More </a>
+											<a class="timeline__event-action bg" href="#" title="Contact Us">Contact Us </a>
+										</div>
+									</div>
+								</div>
+								<div class="timeline__elem timeline__elem--right">
+									<div class="timeline__date">
+										<span class="timeline__date-day">15</span>
+										<span class="timeline__date-month">Jul</span>
+									</div>
+									<div class="timeline__event">
+										<div class="timeline__event-date-time">
+											<div class="timeline__event-date"> <span>15-07-2019</span></div>
+											<div class="timeline__event-time"><span>12:30pm</span></div>
+										</div>
+										<h4 class="timeline__event-title">JS meetup</h4>
+										<div class="timeline__event-descr">
+											<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+										</div>
+										<div class="timeline__event-actions">
+											<a class="timeline__event-action" href="#" title="Learn More">Learn More </a>
+											<a class="timeline__event-action bg" href="#" title="Contact Us">Contact Us </a>
+										</div>
+									</div>
+								</div>
+								<div class="timeline__elem timeline__elem--left">
+									<div class="timeline__date">
+										<span class="timeline__date-day">30</span>
+										<span class="timeline__date-month">Jul</span>
+									</div>
+									<div class="timeline__event">
+										<div class="timeline__event-date-time">
+											<div class="timeline__event-date"> <span>30-07-2019</span></div>
+											<div class="timeline__event-time"><span>12:30pm</span></div>
+										</div>
+										<h4 class="timeline__event-title">JS meetup</h4>
+										<div class="timeline__event-descr">
+											<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+										</div>
+										<div class="timeline__event-actions">
+											<a class="timeline__event-action" href="#" title="Learn More">Learn More </a>
+											<a class="timeline__event-action bg" href="#" title="Contact Us">Contact Us </a>
+										</div>
+									</div>
+								</div>
+								<div class="timeline__elem timeline__elem--right">
+									<div class="timeline__date">
+										<span class="timeline__date-day">17</span>
+										<span class="timeline__date-month">Aug</span>
+									</div>
+									<div class="timeline__event">
+										<div class="timeline__event-date-time">
+											<div class="timeline__event-date"> <span>17-08-2019</span></div>
+											<div class="timeline__event-time"><span>12:30pm</span></div>
+										</div>
+										<h4 class="timeline__event-title">JS meetup</h4>
+										<div class="timeline__event-descr">
+											<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+										</div>
+										<div class="timeline__event-actions">
+											<a class="timeline__event-action" href="#" title="Learn More">Learn More </a>
+											<a class="timeline__event-action bg" href="#" title="Contact Us">Contact Us </a>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% include "footer.html" %}
+{% endblock %}

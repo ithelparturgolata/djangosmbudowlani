@@ -10,12 +10,25 @@
                         Przetargi
                     </strong>
                     <hr>
-              {% for record in records_przetargi %}
-                <h1> {{ record.tytul }}</h1>
-                  <h3>{{ record.opis }}</h3>
 
-                    {% endfor %}
 
+                    <div class='row card-group'>
+                        {% for record in records_przetargi %}
+                            <div class="col row-cols-md-8">
+                                <div class="h-100 d-inline-block">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ record.tytul }}</h5>
+                                        Termin składania: {{ record.termin_skladania }}<br>
+                                        Termin otwarcia: {{ record.otwarcie_ofert }}<br>
+                                        <a href="{% url 'przetargi_details' record.id %}">Szczegóły</a>
+                                        <hr>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>

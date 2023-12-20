@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Statut i regulaminy
+                    </strong>
+                    <hr>
+                    <p align="justify">
+
+                        <a href="media/tumieszkam/statut_2022.pdf" target="_blank">Statut, tekst jednolity z 29.06.2022 r.</a><br>
+
+
+                        <a href="media/tumieszkam/regulamin_remonty.pdf" target="_blank">Regulamin obowiązków Spółdzielni Mieszkaniowej
+                            „BUDOWLANI” w Bydgoszczy i jej Członków w zakresie prac remontowych<br></a>
+                        <a href="media/tumieszkam/regulamin_ladu.pdf" target="_blank">Regulamin ładu i porządku domowego w
+                            nieruchomościach Spółdzielni Mieszkaniowej "Budowlani"<br></a>
+                        <a href="media/tumieszkam/regulamin_zasad_gospodarki.pdf" target="_blank">Regulamin zasad gospodarki finansowej
+                            Spółdzielni Mieszkaniowej "Budowlani"<br></a>
+                        <a href="media/tumieszkam/regulamin_sdm.pdf" target="_blank">Regulamin Samorządu Domowego Mieszkańców<br></a>
+                        <a href="media/tumieszkam/instrukcja_uzytkowania_lokalu.pdf" target="_blank">Instrukcja użytkowania lokalu<br></a>
+                        <a href="media/tumieszkam/reg_rozl_koszt.pdf" target="_blank">Regulamin rozliczania kosztów oraz ustalania
+                            opłat za używanie lokali<br></a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% include "footer.html" %}
+{% endblock %}

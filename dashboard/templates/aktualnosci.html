@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Aktualności
+                    </strong>
+                    <hr>
+                          {% for record in records_aktualnosci %}
+{#        <div class="card mb-2">#}
+{#            <div class="card-header">#}
+{#                <span class="font-weight-bold">{{ record.tytul }}</span><br>#}
+{#                <a href="{% url 'aktualnosci_details' record.id %}">Czytaj...</a><br>#}
+{#                <span class="text-muted">Autor: {{ user }}</span><br>#}
+{#                <span class="text-muted">Data publikacji: {{ record.data_utworzenia }}</span>#}
+{#            </div>#}
+{##}
+{##}
+{#        </div>#}
+
+                              <div class="blog-area accordion-bg">
+				<div class="blog-warp">
+					<div class="blog-ten">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="new-blog-builder blog-style-warp">
+										<div class="grid-content grid-blog">
+											<div class="meta-wrap">
+												<span class="bp-padd">
+												</span>
+												<span>
+													<i class="fa fa-clock-o"></i>
+													<time class="entry-date" >{{ record.data_utworzenia }}</time>
+												</span>
+												<h5 class="post-title-builder">
+													{{ record.tytul }}
+												</h5>
+												<a href="{% url 'aktualnosci_details' record.id %}">Czytaj więcej</a>
+											</div>
+                                            <hr>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% include "footer.html" %}
+{% endblock %}

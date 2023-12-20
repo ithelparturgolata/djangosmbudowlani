@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;
+                    <strong>
+                        Pliki do pobrania
+                    </strong>
+                    <hr>
+                    <p align="justify">
+{% for record in records_pliki %}
+            <a href="{{ record.plik.url }}" target="_blank">{{ record.opis }}<br></a>
+
+{% endfor %}
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    {% include "footer.html" %}
+{% endblock %}
